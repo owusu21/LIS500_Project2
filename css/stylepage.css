@@ -1,0 +1,73 @@
+/*------- Color Pallette
+#274156 - Charcoal
+#1C6E8C - Cerulean
+#605856 - Wenge
+#D5A021 - Goldenrod
+#D0CCD0 - French gray
+------------------------*/
+
+/* Global Styles
+-----------------*/
+
+
+body {
+    background: #D0CCD0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* Header
+------------------*/
+header {
+    color: #1C6E8C;
+    text-align: center;
+    
+}
+
+/* Footer
+------------------*/
+footer {
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+/* Navigation Bar
+------------------*/
+.nav a {
+    display: inline-block;
+    color: #274156;
+    padding: 10px;
+
+}
+
+
+/* About Us Page
+------------------*/
+
+.bios h2 {
+    color: #605856;
+}
+.bios p1 {
+    color: #605856;
+}
+
+img {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
+
+/* Index Page
+------------------*/
+
+    /* Description
+    ------------------*/
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+}
