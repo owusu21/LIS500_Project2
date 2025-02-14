@@ -71,16 +71,16 @@ img {
 
 /* the background */
 body .tech-hero {
-        background: linear-gradient (to bottom, #ff7e5f, #feb47b); #ff7f50; /*light coral*/
+        background: linear-gradient (to bottom, #ff7e5f, #feb47b); /*light coral*/
         font-family: Arial, sans-serif; /*just default font? */
         color: white; /*text color*/
         margin: 0;
-        padding: 0;]
+        padding: 0;
 }
 
 /*heading styles*/
 body.tech-hero h1,
-body.tech-hero h2
+body.tech-hero h2,
 body.tech-hero h3 {
     color: #FFD700; /*Gold*/
     text-align: center;
