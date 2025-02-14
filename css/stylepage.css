@@ -65,6 +65,68 @@ img {
 /* Index Page
 ------------------*/
 
+
+ /* Tech Hero Page
+---------- tropical sunset theme------*/
+
+/* the background */
+body .tech-hero {
+        background: linear-gradient (to bottom, #ff7e5f, #feb47b); #ff7f50; /*light coral*/
+        font-family: Arial, sans-serif; /*just default font? */
+        color: white; /*text color*/
+        margin: 0;
+        padding: 0;]
+}
+
+/*heading styles*/
+body.tech-hero h1,
+body.tech-hero h2
+body.tech-hero h3 {
+    color: #FFD700; /*Gold*/
+    text-align: center;
+}
+
+.tech-hero h1{
+    color:coral; 
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* All for the links
+-----*/
+.links .link-container {
+    display: flex; /* Align links in a row */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Add space between links */
+}
+
+.links a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    padding: 10px 15px; /* Space around links */
+}
+
+.links a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+/* Style for the links */
+.additional-links a {
+    text-decoration: none;
+    color: #0073e6; /* Default text color */
+    font-weight: bold;
+    padding: 10px 15px; /* Space around the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 5px; /* Optional: Rounds the corners */
+}
+
+/* Hover effect for links */
+.additional-links a:hover {
+    color: white; /* Change text color on hover */
+    background-color: #0073e6; /* Add a background color */
+}
+
     /* Description
     ------------------*/
 .description {
