@@ -69,62 +69,8 @@ img {
  /* Tech Hero Page
 ---------- tropical sunset theme, tried to make it fun like her website------*/
 
-/* the background */
-body.tech-hero { 
-        background: linear-gradient(to bottom, #FF7E5F, #FD5E53, #FFCC33);
-        background-repeat: no-repeat; /* Coral to yellow "sunset" gradient for fun, this repeat makes it fill the entire page*/
-        background-attachment: fixed;
-        background-size: cover;
-        height: 100vh;
-        margin: 0;
-        color: white; 
-        font-family: "Montserrat", sans-serif;
-    }
 
-    body.tech-hero h1,
-    body.tech-hero h2,
-    body.tech-hero h3 {
-        color: #6A0DAD; /* Purple */
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Creates a shadow */
-    }
-    p {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
-    }
-
-/* main title for tech hero */
-    .tech-hero h1 {
-        color: coral;
-        text-align: center;
-        maring-top:20%;
-    }
-/* Styling for the links container */
-.links {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 20px; 
-}
-
-/* Styling additional links to look like buttons */
-.links a {
-    display: inline-block;
-    background-color: #FF7E5F; /* Coral color for button */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding around the link to look like a button */
-    font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners to look like a button */
-    transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
-}
-
-/* Hover effect for the links */
-.links a:hover {
-    background-color: #FD5E53; /* Slightly darker coral */
-    transform: scale(1.1); /* enlarge the link on hover */
-}
-
+   
 
 
 
