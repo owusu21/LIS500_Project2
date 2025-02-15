@@ -17,7 +17,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 h2 h3 {
+h1 {
+  color: #6a0dad; /* Purple */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+
+h2 {
+  color: #6a0dad; /* Purple */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+
+h3 {
   color: #6a0dad; /* Purple */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
