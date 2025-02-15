@@ -65,6 +65,28 @@ img {
 /* Index Page
 ------------------*/
 
+body.index-page {
+    background: linear-gradient(to bottom, #53B3CB, #F15946, #E01A4F);
+    background-repeat: no-repeat; /* Blue to pink "tropical" gradient, this makes it fill the entire page*/
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+body.index-page h1,
+body.index-page h2,
+body.index-page h3 {
+  color: #F9C22E; /* Yellow */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+}
+
 /* Tech Hero Page
 ---------- tropical sunset theme------*/
 
