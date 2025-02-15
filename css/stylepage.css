@@ -66,7 +66,7 @@ img {
 /* Index Page
 ------------------*/
 
-.index-page {
+body.index-page {
     background: linear-gradient(to bottom, #53B3CB, #F15946, #E01A4F);
     background-repeat: no-repeat; /* Blue to pink "tropical" gradient, this makes it fill the entire page*/
     background-attachment: fixed;
@@ -77,9 +77,9 @@ img {
     font-family: "Montserrat", sans-serif;
 }
 
-.index-page h1,
-.index-page h2,
-.index-page h3 {
+body.index-page h1,
+body.index-page h2,
+body.index-page h3 {
   color: #F9C22E; /* Yellow */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
