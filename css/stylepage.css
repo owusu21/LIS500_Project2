@@ -39,7 +39,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 100px;
 }
 .nav-links a {
   display: inline-block;
