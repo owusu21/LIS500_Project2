@@ -6,7 +6,31 @@
 #D0CCD0 - French gray
 ------------------------*/
 
+body {
+  background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
+  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #6a0dad; /* Purple */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+
+p1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+}
+
+
 /* Global Styles
+
+
 body {
     background: #D0CCD0;
     font-family: "Montserrat", sans-serif;
@@ -54,27 +78,6 @@ img {
 
 /* Index Page
 ------------------*/
-body.index-page {
-  background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
-  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  margin: 0;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-
-body.index-page h1
-body.index-page h2 {
-  color: #6a0dad; /* Purple */
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
-}
-
-body.index-page p1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
-}
 
 
 
