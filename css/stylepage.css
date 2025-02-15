@@ -43,7 +43,7 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #4dbedf; /* Blue color for button */
+  background-color: #88bbbb; /* Blue color for button */
   color: #134A56; /* Text color */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
@@ -52,7 +52,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #2694ab; /* Slightly darker blue */
+  background-color: #55aaaa; /* Slightly darker blue */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 img {
