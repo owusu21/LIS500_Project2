@@ -56,9 +56,10 @@ p {
   transform: scale(1.1); /* enlarge the link on hover */
 }
 img {
-    width: 300px;
-    float: left;
-    padding: 30px;
+  display: block;
+  margin: auto;
+  width: 50%;
+  
 }
 
 
@@ -106,6 +107,13 @@ p {
   text-align: center;
   margin-top: 20%;
 }
+
+.hero-img {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
 /* Styling for the links container */
 .links {
   display: flex;
