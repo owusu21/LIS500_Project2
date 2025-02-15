@@ -69,13 +69,6 @@ p {
   margin: 50px 200px;
 }
 
-/* Description
-------------------*/
-.description {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 
 /* Tech Hero Page
 ---------- tropical sunset theme------*/
@@ -136,4 +129,12 @@ p {
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
+
+/* Description
+------------------*/
+.description
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
 
