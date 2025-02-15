@@ -8,12 +8,6 @@
 
 /* Global Styles
 ------------------*/
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 body {
   background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
