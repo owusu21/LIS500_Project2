@@ -61,23 +61,6 @@ p {
 /* About Us Page
 ------------------*/
 
-.content-wrap {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 50px;
-  overflow: hidden;
-}
-.col-left {
-  width: 30%;
-}
-.col-right {
-  wdith: 70%;
-}
-
-.profile-img {
-  border-radius: 50%;
-}
-
 /* Index Page
 ------------------*/
 .index-description p {
