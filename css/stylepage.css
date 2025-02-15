@@ -6,6 +6,10 @@
 #D0CCD0 - French gray
 ------------------------*/
 
+/* Global Styles
+------------------*/
+
+
 body {
   background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
   background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
@@ -37,10 +41,10 @@ h3 {
 
 p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
-  margin: 200px;
+  margin: 50px 200px;
 }
 
-/* Styling for the links container */
+/* Styling for the navigational links on each page */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -48,8 +52,6 @@ p {
   gap: 20px;
   margin-top: 20px;
 }
-
-/* Styling additional links to look like buttons */
 .nav-links a {
   display: inline-block;
   background-color: #8010d1; /* Purple color for button */
@@ -60,43 +62,11 @@ p {
   border-radius: 5px; /* Rounded corners to look like a button */
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
-
-/* Hover effect for the links */
 .nav-links a:hover {
   background-color: #750ebf; /* Slightly darker purple */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
-/* Global Styles
-
-
-body {
-    background: #D0CCD0;
-    font-family: "Montserrat", sans-serif;
-    
-}
-a:hover{
-    text-decoration: none;
-}
-
-header {
-    color: #1C6E8C;
-    text-align: center;
-    
-}
-footer {
-    text-align: center;
-    padding: 10px;
-    clear: both;
-}
-
-.nav a {
-    display: inline-block;
-    color: #274156;
-    padding: 10px;
-
-}
------------------*/
 
 /* About Us Page
 ------------------*/
