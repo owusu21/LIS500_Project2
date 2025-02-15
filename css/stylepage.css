@@ -43,7 +43,7 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #af51f2; /* Purple color for button */
+  background-color: #c076f5; /* Purple color for button */
   color: #6a0dad; /* Text color */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
@@ -52,7 +52,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #652a90; /* Slightly darker purple */
+  background-color: #af51f2; /* Slightly darker purple */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 img {
@@ -65,9 +65,9 @@ img {
 /* About Us Page
 ------------------*/
 .bio-text p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
-  margin: 75%, 50%;
-  border-style: solid;
+  margin: 50px 100px;
 }
 
 /* Index Page
