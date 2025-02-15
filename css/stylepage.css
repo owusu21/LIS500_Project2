@@ -21,19 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-  color: #6a0dad; /* Purple */
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
-}
-
-h2 {
-  color: #6a0dad; /* Purple */
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
-}
-
-h3 {
+h1 h2 h3 {
   color: #6a0dad; /* Purple */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
@@ -41,6 +29,7 @@ h3 {
 
 p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-align: center;
   margin: 50px 200px;
 }
 
@@ -54,7 +43,7 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #8010d1; /* Purple color for button */
+  background-color: #93e5ab; /* Seafoam color for button */
   color: white; /* Text color */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
@@ -63,7 +52,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #750ebf; /* Slightly darker purple */
+  background-color: #65b891; /* Slightly darker seafoam */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
