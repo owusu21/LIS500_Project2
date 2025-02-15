@@ -65,10 +65,15 @@ body.index-page {
   font-family: "Montserrat", sans-serif;
 }
 
-body.index-page h1 h2 h3 {
+body.index-page h1
+body.index-page h2 {
   color: #6a0dad; /* Purple */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+
+body.index-page p1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
 }
 
 
