@@ -80,6 +80,11 @@ p {
 
 /* Index Page
 ------------------*/
+.index-description p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-align: center;
+  margin: 50px 200px;
+}
 
 /* Description
 ------------------*/
