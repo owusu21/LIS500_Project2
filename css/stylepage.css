@@ -64,6 +64,9 @@ img {
 
 /* About Us Page
 ------------------*/
+.bio-text {
+  margin: 50px, 100px;
+}
 
 /* Index Page
 ------------------*/
