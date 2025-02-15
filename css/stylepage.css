@@ -54,7 +54,7 @@ img {
 
 /* Index Page
 ------------------*/
-.index-page {
+body.index-page {
   background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
   background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
   background-attachment: fixed;
@@ -65,7 +65,7 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
-.index-page h1 h2 h3 {
+body.index-page h1 h2 h3 {
   color: #6a0dad; /* Purple */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
