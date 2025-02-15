@@ -9,6 +9,7 @@
 /* Global Styles
 ------------------*/
 
+/* Global background */
 body {
   background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
   background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
@@ -20,6 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Global headings */
 h1,
 h2,
 h3 {
@@ -28,6 +30,7 @@ h3 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
 }
 
+/* Global paragraph text */
 p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
   text-align: left;
@@ -83,10 +86,10 @@ img {
 /* Tech Hero Page
 ---------- tropical sunset theme------*/
 
-/* the background */
+/* the background 
 body.tech-hero {
   background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
-  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
+  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -98,15 +101,15 @@ body.tech-hero {
 body.tech-hero h1,
 body.tech-hero h2,
 body.tech-hero h3 {
-  color: #6a0dad; /* Purple */
+  color: #6a0dad; /* Purple 
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow 
 }
 p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow 
 }
 
-/* main title for tech hero */
+/* main title for tech hero 
 .tech-hero h1 {
   color: coral;
   text-align: center;
@@ -118,6 +121,7 @@ p {
     float: left;
     padding: 30px;
 }
+*/
 
 /* Styling for the links container */
 .links {
@@ -126,7 +130,6 @@ p {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  border-style: solid;
 }
 
 /* Styling additional links to look like buttons */
