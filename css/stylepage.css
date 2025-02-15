@@ -64,7 +64,7 @@ img {
 
 /* About Us Page
 ------------------*/
-.bio-text {
+.bio-text p {
   text-align: center;
   margin: 50px, 100px;
   border-style: solid;
