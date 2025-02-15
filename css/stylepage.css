@@ -8,7 +8,17 @@
 
 /* Global Styles
 -----------------*/
+body {
+  background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
+  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 
+}
 
 /* ------- body {
     background: #D0CCD0;
@@ -66,9 +76,9 @@ img {
 /* Index Page
 ------------------*/
 
-body.index-page {
+/* body.index-page {
     background: linear-gradient(to bottom, #53B3CB, #F15946, #E01A4F);
-    background-repeat: no-repeat; /* Blue to pink "tropical" gradient, this makes it fill the entire page*/
+    background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -80,12 +90,12 @@ body.index-page {
 body.index-page h1,
 body.index-page h2,
 body.index-page h3 {
-  color: #F9C22E; /* Yellow */
+  color: #F9C22E; 
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 /* Tech Hero Page
