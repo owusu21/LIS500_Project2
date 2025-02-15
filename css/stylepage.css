@@ -62,19 +62,22 @@ p {
 /* About Us Page
 ------------------*/
 
-.bios h2 {
-    color: #605856;
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
 }
-.bios p1 {
-    color: #605856;
+.col-left {
+  width: 30%;
+}
+.col-right {
+  wdith: 70%;
 }
 
-img {
-    width: 300px;
-    float: left;
-    padding: 30px;
+.profile-img {
+  border-radius: 50%;
 }
-
 
 /* Index Page
 ------------------*/
