@@ -39,8 +39,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 10px;
-  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
 .nav-links a {
   display: inline-block;
@@ -126,6 +126,7 @@ p {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  border-style: solid;
 }
 
 /* Styling additional links to look like buttons */
