@@ -1,0 +1,165 @@
+/*------- Color Pallette
+#274156 - Charcoal
+#1C6E8C - Cerulean
+#605856 - Wenge
+#D5A021 - Goldenrod
+#D0CCD0 - French gray
+------------------------*/
+
+/* Global Styles
+------------------*/
+
+/* Global background */
+body {
+  background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
+  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page*/
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Global headings */
+h1,
+h2,
+h3 {
+  color: #6a0dad; /* Purple */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+}
+
+/* Global paragraph text */
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-align: left;
+}
+
+/* Styling for the navigational links on each page */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+.nav-links a {
+  display: inline-block;
+  background-color: #c076f5; /* Purple color for button */
+  color: #6a0dad; /* Text color */
+  padding: 10px 20px; /* Padding around the link to look like a button */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners to look like a button */
+  transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
+}
+.nav-links a:hover {
+  background-color: #af51f2; /* Slightly darker purple */
+  transform: scale(1.1); /* enlarge the link on hover */
+}
+img {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+footer {
+  padding: 20px;
+}
+
+
+/* About Us Page
+------------------*/
+.bio-text p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 50px 100px;
+}
+
+/* Index Page
+------------------*/
+.index-description p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
+  text-align: left;
+  margin: 50px 200px;
+}
+
+
+/* Tech Hero Page
+---------- tropical sunset theme------*/
+
+/* the background 
+body.tech-hero {
+  background: linear-gradient(to bottom, #ff7e5f, #fd5e53, #ffcc33);
+  background-repeat: no-repeat; /* Coral to yellow "sunset" gradient, this makes it fill the entire page
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+body.tech-hero h1,
+body.tech-hero h2,
+body.tech-hero h3 {
+  color: #6a0dad; /* Purple 
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow 
+}
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow 
+}
+
+/* main title for tech hero 
+.tech-hero h1 {
+  color: coral;
+  text-align: center;
+  margin-top: 20%;
+}
+*/
+
+.hero-img {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
+
+/* Styling for the links container */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Styling additional links to look like buttons */
+.links a {
+  display: inline-block;
+  background-color: #ff7e5f; /* Coral color for button */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the link to look like a button */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners to look like a button */
+  transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
+}
+
+/* Hover effect for the links */
+.links a:hover {
+  background-color: #fd5e53; /* Slightly darker coral */
+  transform: scale(1.1); /* enlarge the link on hover */
+}
+
+
+/* Description
+------------------*/
+.description
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
