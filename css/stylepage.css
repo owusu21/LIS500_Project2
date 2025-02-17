@@ -88,8 +88,8 @@ footer {
 
 .index-description {
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-  padding: 20px;
-  margin: 20px auto;
+  padding: 20px 10px;
+  margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
   border-radius: 10px; /* Rounded corners */
   text-align: center;
