@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Implicit Bias Resources</title>
-
-  <!-- Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <!-- Stylepage link -->
   <link rel="stylesheet" href="css/stylepage.css">
+  <script>
+    function toggleSection(id) {
+      var section = document.getElementById(id);
+      section.style.display = (section.style.display === "none" || section.style.display === "") ? "block" : "none";
+    }
+  </script>
 </head>
-  
 <body>
   <h1>Resources</h1>
-  <p>Implicit bias shapes our perceptions and decisions in ways we may not consciously realize, often reinforcing societal patterns of privilege and discrimination. 
-    The Implicit Bias Test (IBT) helps uncover these hidden associations, sometimes revealing biases that contradict our conscious beliefs. 
-    Intersectionality further expands this understanding by showing how overlapping identities—such as race, gender, class, and ability—intersect to create unique experiences of advantage or oppression. 
-    Recognizing these complexities allows us to challenge implicit biases and address the structural inequalities that shape our world. 
-    This page provides valuable resources on implicit bias, including research articles, videos, and tools to help understand and mitigate unconscious biases.</p>
-
-  <h2>In Class Readings</h2>
-  <ul>
-    <li><a href="https://canvas.wisc.edu/courses/447310/files/43662701?wrap=1">"White Fragility" by Robin Diangelo</a></li>
-    <li><a href="https://canvas.wisc.edu/courses/447310/files/43662509?wrap=1">Ben Shapiro's Take on Intersectionality</a></li>
-  </ul>
-
-  <h2>Articles</h2>
-  <ul>
-    <li><a href="https://perception.org/research/implicit-bias/">What is Implicit Bias?</a></li>
-    <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4181947/">Intersectionality Article</a></li>
-</ul>
-
-  <h2>Videos</h2>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=sWP92i7JLlQ&pp=ygURaW50ZXJzZWN0aW9uYWxpdHk%3D">Professor Kimberlé Crenshaw Defines Intersectionality</a> </li>
-    <li><a href="https://www.youtube.com/watch?v=GP-cqFLS8Q4&pp=ygUWaW1wbGljaXQgYmlhcyB0ZWQgdGFsaw%3D%3D">How to Outsmart Your Own Unconscious Bias</a> </li>
-    <li><a href="https://www.youtube.com/watch?v=EOPbf3Ponew&pp=ygUSaW1wbGljaXQgYmlhcyB0ZXN0"> Implicit Association Test</a></li>
-</ul>
-
-<h2>Take The IBT</h2>
-<ul>
-    <li><a href="https://implicit.harvard.edu/implicit/takeatest.html">Take The Implicit Bias Test</a> </li>
-  </ul>
-
-  <!-- Navigation -->
+  <p>Implicit bias shapes our perceptions and decisions in ways we may not consciously realize... </p>
+  
+  <h2 onclick="toggleSection('readings')" class="dropdown">In Class Readings &#9662;</h2>
+  <div id="readings" style="display:none;">
+    <a href="https://canvas.wisc.edu/courses/447310/files/43662701?wrap=1" class="button">"White Fragility" by Robin Diangelo</a>
+    <a href="https://canvas.wisc.edu/courses/447310/files/43662509?wrap=1" class="button">Ben Shapiro's Take on Intersectionality</a>
+  </div>
+  
+  <h2 onclick="toggleSection('articles')" class="dropdown">Articles &#9662;</h2>
+  <div id="articles" style="display:none;">
+    <a href="https://perception.org/research/implicit-bias/" class="button">What is Implicit Bias?</a>
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4181947/" class="button">Intersectionality Article</a>
+  </div>
+  
+  <h2 onclick="toggleSection('videos')" class="dropdown">Videos &#9662;</h2>
+  <div id="videos" style="display:none;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sWP92i7JLlQ" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GP-cqFLS8Q4" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EOPbf3Ponew" allowfullscreen></iframe>
+  </div>
+  
+  <h2 onclick="toggleSection('ibt')" class="dropdown">Take The IBT &#9662;</h2>
+  <div id="ibt" style="display:none;">
+    <a href="https://implicit.harvard.edu/implicit/takeatest.html" class="button">Take The Implicit Bias Test</a>
+  </div>
+  
   <footer>
     <h1> Explore Our Site </h1>
     <div class="nav-links">
