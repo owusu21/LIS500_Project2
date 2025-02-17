@@ -198,13 +198,14 @@ p {
 }
 
 .resource-links a {
+  display: inline-block;
   background-color: #ff7e5f;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .resource-links a:hover {
