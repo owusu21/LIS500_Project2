@@ -185,7 +185,7 @@ p {
 }
 
 .resource-section h2 {
-  color: #D5A021;
+  color: #b88205;
   text-align: center;
 }
 
@@ -199,8 +199,8 @@ p {
 
 .resource-links a {
   display: inline-block;
-  background-color: #ff7e5f;
-  color: white;
+  background-color: #f3ed9a;
+  color: rgb(236, 156, 36);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
