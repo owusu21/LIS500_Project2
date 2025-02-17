@@ -25,7 +25,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #00796B; /* Purple */
+  color: #00a08e; /* Purple */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
 }
@@ -47,7 +47,7 @@ p {
 .nav-links a {
   display: inline-block;
   background-color: #4DB6AC; /* Color for button */
-  color: #00796B; /* Text color */
+  color: #00a08e; /* Text color */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
   text-decoration: none; /* Remove underline */
