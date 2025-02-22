@@ -95,18 +95,14 @@ footer {
 /* Tech Hero Page
 ------*/
 
-.column {
-  width: 50%;
-  float: left;
-  border: 1px solid;
-  text-align: left;
+.row {
+  display: flex;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  flex: 50%;
 }
+
 
 .hero-img {
     width: 300px;
