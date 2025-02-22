@@ -42,8 +42,8 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #91A193; /* Green color "Cambridge blue" for button (lightest) */
-  color: #2E3532; /* Onyx text color (darkest) */
+  background-color: #7B8E7D; /* Reseda color for button (lightest green) */
+  color: #2E3532; /* Onyx text color (darkest green) */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
   text-decoration: none; /* Remove underline */
@@ -51,7 +51,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #7B8E7D; /* Resedea color for button (midtone of greens) */
+  background-color: #5E6E60; /* Feldgrau color for button (midtone of greens) */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
