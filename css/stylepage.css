@@ -68,11 +68,25 @@ footer {
 
 /* About Us Page
 ------------------*/
+.about-container-1 {
+  display: flex;
+}
+
+.about-container-2 {
+  display: flex;
+}
+
+.about-container-3 {
+  display: flex;
+}
+
 .bio-text p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin: 50px 100px;
 }
+
+
 
 /* Index Page
 ------------------*/
