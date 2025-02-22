@@ -95,7 +95,11 @@ footer {
 /* Tech Hero Page
 ------*/
 
-.container {
+.container-1 {
+  display: flex;
+}
+
+.container-2 {
   display: flex;
 }
 
