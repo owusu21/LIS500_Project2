@@ -1,6 +1,10 @@
 /* Global Styles
 ------------------*/
 
+* {
+  box-sizing: border-box:
+  }
+
 /* Global background */
 body {
   background: linear-gradient(to bottom, #8392AF, #B4BDCF, #DADEE7);
@@ -93,7 +97,11 @@ footer {
 
 .column {
   width: 33.3%;
-  float: left:
+  float: left;
+  padding: 13px;
+  min-height: 350px;
+  border: 1px solid;
+  text-align: center;
 }
 
 .hero-img {
