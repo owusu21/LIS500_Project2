@@ -104,6 +104,12 @@ footer {
   text-align: center;
 }
 
+.all-rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .hero-img {
     width: 300px;
     float: left;
