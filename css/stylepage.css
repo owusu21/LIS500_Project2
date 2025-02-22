@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(166, 154, 172, 0.2); /* Semi-transparent purple background */
+  background: rgba(106, 124, 160, 0.2); /* Semi-transparent blue background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -137,7 +137,7 @@ footer {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(166, 154, 172, 0.2); /* Semi-transparent purple background */
+  background: rgba(106, 124, 160, 0.2); /* Semi-transparent blue background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -156,7 +156,7 @@ footer {
 }
 
 .resource-section h2 {
-  color: #2E3532; /* Onyx, darkest green */
+  color: #695C70; /* Purple heading text, darkest darkest purple */
   text-align: center;
 }
 
@@ -170,8 +170,8 @@ footer {
 
 .resource-links a {
   display: inline-block;
-  background-color: #F1D595; /* link background color lightest yellow */
-  color: #E5B138; /* link text color darkest yellow */
+  background-color: #9C8FA3; /* link background color lightest purple */
+  color: #7E6E87; /* link text color darkest purple */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -180,7 +180,7 @@ footer {
 }
 
 .resource-links a:hover {
-  background-color: #EABF5D; /* link text color midtone yellow */
+  background-color: #92849A; /* link text color midtone purple */
   transform: scale(1.1);
 }
 
