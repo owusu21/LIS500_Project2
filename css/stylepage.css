@@ -109,14 +109,12 @@ footer {
   
 .column-left {
   flex: 30%;
-  padding: 15px;
-  border: 1px solid;
+  padding: 20px;
 }
 
 .column-right {
   flex: 70%;
-  padding: 15px;
-  border: 1px solid;
+  padding: 20px;
 }
 
 .hero-img {
