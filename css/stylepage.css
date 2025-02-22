@@ -101,18 +101,21 @@ footer {
 
 .column-left {
   flex: 30%;
+  padding: 15px;
   border: 1px solid;
 }
 
 .column-right {
   flex: 70%;
+  padding: 15px;
   border: 1px solid;
 }
 
 .hero-img {
-    width: 300px;
-    float: left;
+    width: 60%;
     padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
