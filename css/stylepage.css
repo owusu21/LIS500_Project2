@@ -139,11 +139,13 @@ footer {
   display: inline-block;
   background-color: #9C8FA3; /* link background color lightest purple */
   color: #4A404F; /* link text color darkest purple */
-  padding: 10px 20px; /* Padding around the link to look like a button */
+  padding: 5px 10px; /* Padding around the link to look like a button */
   font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
   text-decoration: none; /* Remove underline */
   border-radius: 5px; /* Rounded corners to look like a button */
-  transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
+  transition: background-color 0.3s, transform 0.1s; /* change color with getting bigger */
 }
 
 /* Hover effect for the links */
