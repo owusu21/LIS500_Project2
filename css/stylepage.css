@@ -103,6 +103,10 @@ footer {
   display: flex;
 }
 
+.container-3 {
+  display: flex;
+}
+  
 .column-left {
   flex: 30%;
   padding: 15px;
