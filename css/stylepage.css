@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
+  background: rgba(248, 234, 201, 0.8); /* semi-transparent yellow background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -137,7 +137,7 @@ footer {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
+  background: rgba(248, 234, 201, 0.8); /* semi-transparent yellow background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
