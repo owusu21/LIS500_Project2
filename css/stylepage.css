@@ -9,7 +9,7 @@ body {
   background-size: cover;
   height: 100vh;
   margin: 0;
-  color: white;
+  color: #4A404F; /* dark purple text color */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(248, 234, 201, 0.8); /* semi-transparent yellow background */
+  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -137,7 +137,7 @@ footer {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(248, 234, 201, 0.8); /* semi-transparent yellow background */
+  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -150,7 +150,7 @@ footer {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
+  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
