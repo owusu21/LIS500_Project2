@@ -91,6 +91,11 @@ footer {
 /* Tech Hero Page
 ------*/
 
+.column {
+  width: 33.3%;
+  float: left:
+}
+
 .hero-img {
     width: 300px;
     float: left;
