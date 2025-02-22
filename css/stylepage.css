@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(144, 155, 182, 0.2); /* semi-transparent blue background */
+  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -110,8 +110,8 @@ footer {
 /* Styling additional links to look like buttons */
 .links a {
   display: inline-block;
-  background-color: #ff7e5f; /* Coral color for button */
-  color: white; /* Text color */
+  background-color: #9C8FA3; /* link background color lightest purple */
+  color: #4A404F; /* link text color darkest purple */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
   text-decoration: none; /* Remove underline */
@@ -121,7 +121,7 @@ footer {
 
 /* Hover effect for the links */
 .links a:hover {
-  background-color: #fd5e53; /* Slightly darker coral */
+  background-color: #92849A; /* link background hover color midtone purple */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
@@ -137,7 +137,7 @@ footer {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(144, 155, 182, 0.2); /* semi-transparent blue background */
+  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -150,7 +150,7 @@ footer {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(144, 155, 182, 0.2); /* semi-transparent blue background */
+  background: rgba(243, 221, 165, 0.8); /* semi-transparent yellow background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -180,7 +180,7 @@ footer {
 }
 
 .resource-links a:hover {
-  background-color: #92849A; /* link text color midtone purple */
+  background-color: #92849A; /* link background hover color midtone purple */
   transform: scale(1.1);
 }
 
