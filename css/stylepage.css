@@ -96,15 +96,14 @@ footer {
 ------*/
 
 .column {
-  width: 33.3%;
+  width: 50%;
   float: left;
   padding: 13px;
-  min-height: 350px;
   border: 1px solid;
-  text-align: center;
+  text-align: left;
 }
 
-.all-rows:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
