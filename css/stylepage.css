@@ -3,8 +3,8 @@
 
 /* Global background */
 body {
-  background: linear-gradient(to bottom, #C7CEDB, #DADEE7, #E6E9EF);
-  background-repeat: no-repeat; /* Gradient background of light blue to almost white, this makes it fill the entire page*/
+  background: linear-gradient(to bottom, #9BA7BF, #B4BDCF, #C1C8D7);
+  background-repeat: no-repeat; /* Gradient background of dark blue to light blue, this makes it fill the entire page*/
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -19,7 +19,7 @@ h2,
 h3 {
   color: #2E3532; /* Onyx */
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Creates a shadow */
+ /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  Creates a shadow */
 }
 
 /* Global paragraph text */
@@ -38,7 +38,7 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #4C5752; /* Feldgrau color for button (lightest) */
+  background-color: #91A193; /* Green color "Cambridge blue" for button (lightest) */
   color: #2E3532; /* Onyx text color (darkest) */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
@@ -47,7 +47,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #39413E; /* Black olive color for button (midtone of greens) */
+  background-color: #7B8E7D; /* Resedea color for button (midtone of greens) */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  background: rgba(186, 176, 191, 0.2); /* Semi-transparent purple background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
