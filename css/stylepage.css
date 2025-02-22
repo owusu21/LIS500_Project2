@@ -3,7 +3,7 @@
 
 /* Global background */
 body {
-  background: linear-gradient(to bottom, #9BA7BF, #B4BDCF, #C1C8D7);
+  background: linear-gradient(to bottom, #8392AF, #B4BDCF, #DADEE7);
   background-repeat: no-repeat; /* Gradient background of dark blue to light blue, this makes it fill the entire page*/
   background-attachment: fixed;
   background-size: cover;
@@ -79,7 +79,7 @@ footer {
 }
 
 .index-description {
-  background: rgba(236, 199, 111, 0.2); /* Semi-transparent yellow background */
+  background: rgb(240, 212, 147); /* yellow background */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -137,7 +137,7 @@ footer {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(236, 199, 111, 0.2); /* Semi-transparent yellow background */
+  background: rgb(240, 212, 147); /* yellow background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
