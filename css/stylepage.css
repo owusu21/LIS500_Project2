@@ -198,7 +198,7 @@ header {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background-color: #7B8E7D; /* semi-transparent yellow background */
+  background-color: #7B8E7D; 
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -211,13 +211,13 @@ header {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #7B8E7D; /* semi-transparent yellow background */
+  background-color: #7B8E7D; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .resource-section h2 {
-  color: #4A404F; /* Purple heading text, darkest purple */
+  color: #000000; /* Purple heading text, darkest purple */
   text-align: center;
 }
 
@@ -231,8 +231,8 @@ header {
 
 .resource-links a {
   display: inline-block;
-  background-color: #8392AF; /* link background color */
-  color: #4A404F; /* link text color */
+  background-color: #3b4b69; /* link background color */
+  color: #ffffff; /* link text color */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
