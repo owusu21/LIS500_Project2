@@ -24,12 +24,10 @@ h2,
 h3 {
   color: #4B3B47 ; /* coral */
   text-align: center;
- /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  Creates a shadow */
 }
 
 /* Global paragraph text */
 p {
- /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  Creates a shadow */
   text-align: left;
 }
 
@@ -60,6 +58,11 @@ header {
   padding: 20px;
 }
 
+.page-title h1 {
+  color: #4B3B47 ; /* coral */
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
 
 /* About Us Page 
 ------------------*/
