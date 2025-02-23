@@ -2,7 +2,7 @@
 ------------------*/
 
 * {
-  box-sizing: border-box:
+  box-sizing: border-box;
   }
 
 /* Global background */
@@ -259,3 +259,50 @@ header {
   border-radius: 10px;
 }
 
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* The slide that holds the images */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Style for the images */
+.carousel-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Previous & Next buttons */
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
