@@ -93,12 +93,6 @@ header {
   padding: 20px;
 }
 
-.about-img {
-  width: 80%;
-  border-radius: 10px; /* Rounded image corners */
-  margin: 10px auto;
-}
-
 .bio-text p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   text-align: left;
