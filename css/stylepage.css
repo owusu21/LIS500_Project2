@@ -106,7 +106,7 @@ header {
 }
 
 .personal-links {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
