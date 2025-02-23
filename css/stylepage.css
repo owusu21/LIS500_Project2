@@ -43,7 +43,7 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #C97D63
+  background-color: #C97D63;
   color: #4B3B47; /* Onyx text color (darkest green) */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
