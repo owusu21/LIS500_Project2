@@ -226,7 +226,7 @@ h2 {
 .column-right p {
   max-width: 100%;
   min-height: 100%;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 20px;
   background-color: #F5D9C8; 
   border-radius: 10px;
