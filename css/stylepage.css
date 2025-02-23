@@ -214,15 +214,17 @@ h2 {
   flex: 30%;
   margin: 20px auto;
   padding: 20px 5px 20px, 20px;
+  border-style: solid;
 }
 
 .column-right {
   flex: 70%;
   padding: 20px 20px 20px, 5px;
+  border-style: solid;
 }
 
 .column-right p {
-  max-width: 75%;
+  max-width: 100%;
   margin: 10px auto;
   padding: 20px;
   background-color: #F5D9C8; 
