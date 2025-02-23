@@ -6,16 +6,17 @@
   }
 
 /* Global background */
+
 body {
-  background: linear-gradient(to bottom, #8392AF, #B4BDCF, #DADEE7);
-  background-repeat: no-repeat; /* Gradient background of dark blue to light blue, this makes it fill the entire page*/
+  background: linear-gradient(to bottom, #CBA698, #D9B89A, #A8C3B6, #b6c1dd);
+  background-repeat:repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   margin: 50px, 0px;
-  color: #4A404F; /* dark purple text color */
+  color: #4A404F;
   font-family: "Montserrat", sans-serif;
-}
+}  
 
 /* Global headings */
 h1,
