@@ -220,12 +220,23 @@ h2 {
   padding: 20px;
 }
 
+.column-right p {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #F5D9C8; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .hero-img {
   border-radius: 10px; /* Rounded image corners */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  border: 1px solid #8f99b3;
+  padding: 5px;
 }
 
 /* Styling for the links container */
