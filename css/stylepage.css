@@ -22,7 +22,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #2E3532; /* Onyx, darkest green */
+  color: #4B3B47 ; /* coral */
   text-align: center;
  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  Creates a shadow */
 }
@@ -43,8 +43,8 @@ p {
 }
 .nav-links a {
   display: inline-block;
-  background-color: #7B8E7D; /* Reseda color for button (lightest green) */
-  color: #2E3532; /* Onyx text color (darkest green) */
+  background-color: #C97D63
+  color: #4B3B47; /* Onyx text color (darkest green) */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
   text-decoration: none; /* Remove underline */
@@ -52,7 +52,7 @@ p {
   transition: background-color 0.3s, transform 0.2s; /* change color with getting bigger */
 }
 .nav-links a:hover {
-  background-color: #5E6E60; /* Feldgrau color for button (midtone of greens) */
+  background-color: #B56E58; /* Feldgrau color for button (midtone of greens) */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
@@ -66,13 +66,13 @@ header {
 
 .about-container-1, .about-container-2, .about-container-3 {
   display: flex;
-  border: 2px solid #7B8E7D; /* Border color similar to index page */
+  border: 2px solid #A8C3B6; /* Border color similar to index page */
   border-radius: 15px; /* Rounded corners */
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
   margin: 20px auto;
   padding: 20px;
   max-width: 900px; /* Limit width for readability */
-  background-color: #F5F5F5; /* Light background color for contrast */
+  background-color: #F9EAE3;
 }
 
 .about-column-left {
@@ -114,7 +114,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: #59705b;
+  color: #C97D63;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -126,7 +126,7 @@ h2 {
 }
 
 .index-description {
-  background-color: #9ead9f; /* Medium green color for background box */
+  background-color: #F5D9C8; 
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -180,8 +180,8 @@ h2 {
 /* Styling additional links to look like buttons */
 .links a {
   display: inline-block;
-  background-color: #9C8FA3; /* link background color lightest purple */
-  color: #4A404F; /* link text color darkest purple */
+  background-color: #8F99B3; /* link background color lightest purple */
+  color: #FFFFFF; /* link text color darkest purple */
   padding: 10px 20px; /* Padding around the link to look like a button */
   font-weight: bold;
   font-size: 12px;;
@@ -193,12 +193,12 @@ h2 {
 
 /* Hover effect for the links */
 .links a:hover {
-  background-color: #92849A; /* link background hover color midtone purple */
+  background-color: #7C89A3; /* link background hover color midtone purple */
   transform: scale(1.1); /* enlarge the link on hover */
 }
 
 .hero-name h2 {
-  background-color: #3b4b69;
+  background-color: #B56E58;
   color:  #ffffff;
   padding: 15px 25px;
   margin: 2% 20%;
@@ -220,7 +220,7 @@ h2 {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background-color: #9ead9f; 
+  background-color: #F5D9C8; 
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -239,7 +239,7 @@ h2 {
 }
 
 .resource-section h2 {
-  color: #000000; /* Black heading text */
+  color: #4B3B47; /* Black heading text */
   text-align: center;
 }
 
@@ -253,7 +253,7 @@ h2 {
 
 .resource-links a {
   display: inline-block;
-  background-color: #3b4b69; /* link background color */
+  background-color: #8F99B3; /* link background color */
   color: #ffffff; /* link text color */
   padding: 10px 20px;
   text-decoration: none;
@@ -263,7 +263,7 @@ h2 {
 }
 
 .resource-links a:hover {
-  background-color: #92849A; /* link background hover color */
+  background-color: #7C89A3; /* link background hover color */
   transform: scale(1.1);
 }
 
