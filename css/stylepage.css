@@ -212,7 +212,8 @@ h2 {
   
 .column-left {
   flex: 30%;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 20px 5px 20px, 20px;
 }
 
 .column-right {
