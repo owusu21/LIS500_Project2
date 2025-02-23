@@ -12,10 +12,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  margin: 0;
+  margin: 50px, 0px;
   color: #4A404F; /* dark purple text color */
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 50px;
 }
 
 /* Global headings */
@@ -157,9 +156,9 @@ h2 {
 }
 
 .hero-img {
-  width: 80%;
+  width: 200px;
   border-radius: 10px; /* Rounded image corners */
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 
