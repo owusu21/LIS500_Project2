@@ -163,14 +163,14 @@ h2 {
   width: 50%;
 }
 
-/* .hero-name {
+.hero-name h2 {
   background-color: #3b4b69;
-  color:  #ffffff; /* name text color white
+  color:  #ffffff;
   padding: 25px 50px; 
   font-weight: bold;
   font-size: 18px;;
   text-align: center;
-  border-radius: 5px; Rounded corners to look like a button */
+  border-radius: 5px; Rounded corners to look like a button 
 
 /* Styling for the links container */
 .links {
