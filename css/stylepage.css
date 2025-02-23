@@ -163,15 +163,6 @@ h2 {
   width: 50%;
 }
 
-.hero-name h2 {
-  background-color: #3b4b69;
-  color:  #ffffff;
-  padding: 25px 50px; 
-  font-weight: bold;
-  font-size: 18px;;
-  text-align: center;
-  border-radius: 5px; Rounded corners to look like a button 
-
 /* Styling for the links container */
 .links {
   display: flex;
@@ -199,6 +190,16 @@ h2 {
 .links a:hover {
   background-color: #92849A; /* link background hover color midtone purple */
   transform: scale(1.1); /* enlarge the link on hover */
+}
+
+.hero-name h2 {
+  background-color: #3b4b69;
+  color:  #ffffff;
+  padding: 25px 50px; 
+  font-weight: bold;
+  font-size: 18px;;
+  text-align: center;
+  border-radius: 5px; 
 }
 
 
