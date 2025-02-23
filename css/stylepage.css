@@ -105,9 +105,32 @@ header {
   line-height: 1.6;
 }
 
+.personal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.personal-links a {
+  display: inline-block;
+  background-color: #8F99B3; /* link background color */
+  color: #ffffff; /* link text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.personal-links a:hover {
+  background-color: #7C89A3; /* link background hover color */
+  transform: scale(1.1);
+}
+
 /* Index Page
 ------------------*/
-
  h1.index-title {
   font-family: "Press Start 2P", serif;
   font-weight: 400;
@@ -204,7 +227,6 @@ h2 {
   margin-right: auto;
   width: 75%;
 }
-
 
 /* Styling for the links container */
 .links {
