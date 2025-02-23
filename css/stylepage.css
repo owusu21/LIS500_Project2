@@ -163,14 +163,14 @@ h2 {
   width: 50%;
 }
 
-.hero-name {
-  background-color: #3b4b69; /* name background color dark blye*/
-  color:  #ffffff; /* name text color white */
-  padding: 25px 50px; /* Padding around the link to look like a button */
+/* .hero-name {
+  background-color: #3b4b69;
+  color:  #ffffff; /* name text color white
+  padding: 25px 50px; 
   font-weight: bold;
   font-size: 18px;;
   text-align: center;
-  border-radius: 5px; /* Rounded corners to look like a button */
+  border-radius: 5px; Rounded corners to look like a button */
 
 /* Styling for the links container */
 .links {
