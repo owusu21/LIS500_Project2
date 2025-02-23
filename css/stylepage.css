@@ -198,7 +198,7 @@ header {
 /* Resource Page
 ------------------*/
 .resource-description {
-  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
+  background-color: #7B8E7D; /* semi-transparent yellow background */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px; /* Adjust width for better readability */
@@ -211,7 +211,7 @@ header {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
+  background-color: #7B8E7D; /* semi-transparent yellow background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -231,8 +231,8 @@ header {
 
 .resource-links a {
   display: inline-block;
-  background-color: #9C8FA3; /* link background color lightest purple */
-  color: #4A404F; /* link text color darkest purple */
+  background-color: #8392AF; /* link background color */
+  color: #4A404F; /* link text color */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -241,7 +241,7 @@ header {
 }
 
 .resource-links a:hover {
-  background-color: #92849A; /* link background hover color midtone purple */
+  background-color: #92849A; /* link background hover color */
   transform: scale(1.1);
 }
 
@@ -261,48 +261,48 @@ header {
 
 /* Carousel Container */
 .carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* The slide that holds the images */
 .carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Style for the images */
 .carousel-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 /* Previous & Next buttons */
 .carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
 }
 
 .carousel-prev {
-  left: 0;
+    left: 0;
 }
 
 .carousel-next {
-  right: 0;
+    right: 0;
 }
 
 .carousel-prev:hover, .carousel-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
