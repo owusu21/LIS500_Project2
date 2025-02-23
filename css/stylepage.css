@@ -149,6 +149,13 @@ h2 {
   text-align: center;
 }
 
+.index-img {
+  display: block;
+  margin: 20px auto; /* Centers the image horizontally */
+  max-width: 800px; /* Matches the width of .index-description */
+  width: 100%; /* Ensures the image scales to the width of its container */
+  height: auto; /* Maintains aspect ratio */
+}
 .index-description p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
   text-align: center;
