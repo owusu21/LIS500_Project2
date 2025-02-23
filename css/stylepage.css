@@ -103,7 +103,11 @@ header {
 
 /* Index Page
 ------------------*/
-
+h1 {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Name heading styling */
 h2 {
   font-family: 'Montserrat', sans-serif;
