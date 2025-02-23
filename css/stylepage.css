@@ -66,18 +66,16 @@ header {
   padding: 20px;
 }
 
-
-/* About Us Page
-------------------*/
+/*About Us*/
 .about-container-1, .about-container-2, .about-container-3 {
   display: flex;
-  border: 2px solid #7B8E7D; 
-  border-radius: 15px; 
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #7B8E7D; /* Border color similar to index page */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
   margin: 20px auto;
   padding: 20px;
-  max-width: 900px; 
-  background-color: #F5F5F5; /* white  */
+  max-width: 900px; /* Limit width for readability */
+  background-color: #F5F5F5; /* Light background color for contrast */
 }
 
 .about-column-left {
@@ -91,6 +89,12 @@ header {
 .about-column-right {
   flex: 70%;
   padding: 20px;
+}
+
+.about-img {
+  width: 80%;
+  border-radius: 10px; /* Rounded image corners */
+  margin: 10px auto;
 }
 
 .bio-text p {
@@ -111,13 +115,7 @@ h2 {
   text-align: center;
 }
 
-.about-img {
-  width: 100%; /* Increase image width to take full space of its column */
-  max-width: 300px; /* Limit maximum size so it doesn't get too large */
-  height: auto; /* Keep image proportions */
-  border-radius: 10px;
-  margin: 10px auto;
-}
+
 
 
 
