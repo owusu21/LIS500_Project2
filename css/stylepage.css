@@ -115,7 +115,7 @@ header {
 }
 
 .index-description {
-  background: rgba(240, 214, 147, 0.8); /* semi-transparent yellow background */
+  background-color: #7B8E7D; /* Reseda color for button (lightest green) */
   padding: 20px 10px;
   margin: 10px auto;
   max-width: 800px; /* Adjust width for better readability */
