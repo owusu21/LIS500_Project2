@@ -114,7 +114,7 @@ header {
 }
 
 .personal-links a {
-  display: block;
+  display: table;
   background-color: #8F99B3; /* link background color */
   color: #ffffff; /* link text color */
   padding: 10px 20px;
