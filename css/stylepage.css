@@ -187,7 +187,7 @@ h2 {
 
 /* Image inside the container */
 .index-img {
-  width: 100%;
+  width: 75%;
   max-width: 500px;
   height: auto;
   border-radius: 10px;
@@ -219,7 +219,7 @@ h2 {
 
 /* Paragraph Text in the Description */
 .index-description p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
   color: #333;
   text-align: center;
