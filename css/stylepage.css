@@ -196,7 +196,7 @@ h2 {
   display: block; /* Makes the link block-level to center and avoid extra margin */
   text-align: center;
   margin-top: 10px;
-  color: #ffff;
+  color:#ffff;
   text-decoration: none;
   font-size: .8em;
 }
