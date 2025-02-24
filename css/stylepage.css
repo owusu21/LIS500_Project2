@@ -171,28 +171,77 @@ h2 {
   margin-bottom: 10px;
   text-align: center;
 }
-
-.index-img {
-  display: block;
-  margin: 20px auto; /* Centers the image horizontally */
-  max-width: 800px; /* Matches the width of .index-description */
-  width: 100%; /* Ensures the image scales to the width of its container */
-  height: auto; /* Maintains aspect ratio */
-}
-.index-description p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Creates a shadow */
-  text-align: center;
-  margin: 50px 200px;
-}
-
-.index-description {
-  background-color: #F5D9C8; 
+/* Image Container */
+.index-img-container {
+  background-color: rgba(245, 217, 200, 0.6); 
   padding: 20px 10px;
   margin: 10px auto;
-  max-width: 800px; /* Adjust width for better readability */
-  border-radius: 10px; /* Rounded corners */
+  max-width: 800px;
+  border-radius: 20px; /* Slightly larger radius for the image container */
   text-align: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for separation */
+  display: block;
+}
+
+/* Image inside the container */
+.index-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Image Credit Link */
+.index-img-link {
+  display: block; /* Makes the link block-level to center and avoid extra margin */
+  text-align: center;
+  margin-top: 10px;
+  color: #ffff;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.index-img-link:hover {
+  text-decoration: underline;
+}
+
+/* Description Container */
+.index-description {
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 15px; /* Different radius for description container */
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Lighter shadow for the description box */
+}
+
+/* Paragraph Text in the Description */
+.index-description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.index-description p:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.index-description p:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Animation for Paragraph Fade In */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Tech Hero Page
