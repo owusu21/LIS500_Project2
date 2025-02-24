@@ -181,6 +181,7 @@ h2 {
   text-align: center;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for separation */
   display: block;
+  align-items: center;
 }
 
 /* Image inside the container */
@@ -202,6 +203,7 @@ h2 {
 }
 
 .index-img-link:hover {
+  color: #ffff;
   text-decoration: underline;
 }
 
