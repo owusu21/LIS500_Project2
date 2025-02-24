@@ -185,7 +185,24 @@ h2 {
   align-items: center;
 }
 
-/* Image inside the container */
+
+figure.index-img-link {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
+/* Image inside the container 
 .index-img {
   width: 75%;
   max-width: 500px;
@@ -193,15 +210,17 @@ h2 {
   border-radius: 10px;
 }
 
-/* Image Credit Link */
+/* Image Credit Link 
 .index-img-link {
-  display: block; /* Makes the link block-level to center and avoid extra margin */
+  display: block; /* Makes the link block-level to center and avoid extra margin 
   text-align: center;
   margin-top: 10px;
   color:white;
   text-decoration: none;
   font-size: .8em;
 }
+
+*/
 
 .index-img-link:hover {
   color: #ffff;
