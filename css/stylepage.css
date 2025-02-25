@@ -198,7 +198,6 @@ img {
     border-radius: 10px;
 }
 .caption {
-    /* Make the caption a block so it occupies its own line. */
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -207,26 +206,6 @@ img {
     font-size: .8em;
     
 }
-
-/* Image inside the container 
-.index-img {
-  width: 75%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Image Credit Link 
-.index-img-link {
-  display: block; /* Makes the link block-level to center and avoid extra margin 
-  text-align: center;
-  margin-top: 10px;
-  color:white;
-  text-decoration: none;
-  font-size: .8em;
-}
-
-*/
 
 .index-img-link:hover {
   color: #ffff;
