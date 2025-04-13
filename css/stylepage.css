@@ -460,9 +460,9 @@ img {
 /* Machine Page
 -----------------------------------*/
 .img-examples {
-  display: block;
+  display: inline;
   margin: auto;
-  width: 50%;
+  width: 25%;
 }
 
 /* Teachable Machine Model Container
