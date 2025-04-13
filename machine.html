@@ -13,9 +13,8 @@
   <link rel="stylesheet" href="css/stylepage.css">
 
   <!-- Load p5.js and ml5.js libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 
 <!-- Navigation -->
@@ -45,83 +44,77 @@
     <p>Training the machine was relatviely simple after following the machine learning materials provided in our course. After uploading the images to our machine and cateogrizing them as horses, fish, or birds, we tested our machine. The machine works by utilizing a webcamera, and holding an image infront of it. We used our mobile phones to display an image for the webcamera to capture. Once caputered, the machine categorized the image.</p>
 <h3>Watch Our Model</h3>
     <!---LINKED TO VIDEO-->
-    <h3>Try Our Model</h3>
-      <div id="model-container" style="margin: 20px 0; text-align: center;">
-        <p>Hold up an image of a horse, bird, or fish to your webcam:</p>
-        <div id="canvas-container"></div>
-        <p id="prediction-text" style="font-weight: bold; font-size: 18px;"></p>
-      </div>
 
-    <h3>Check Out The Code</h3>
-    <!--github link-->
+<h3>Try Our Model</h3>
+<div id="model-container">
+  <p>Hold up an image of a horse, bird, or fish to your webcam:</p>
+  <button type="button" class="webcam-btn" onclick="init()">Start Webcam</button>
+  <div id="webcam-container"></div>
+  <div id="label-container"></div>
+</div>
 
-    <script>
-      // Classifier Variable
-      let classifier;
-      // Model URL - make sure this path is correct
-      let imageModelURL = './my_model/';
+<h3>Check Out The Code</h3>
+  <!--github link-->
+
+  <script>
+    // Your Teachable Machine model URL
+    const URL = "https://teachablemachine.withgoogle.com/models/jRAbVev-M/";
+    
+    let model, webcam, labelContainer, maxPredictions;
+
+    // Load the image model and setup the webcam
+    async function init() {
+      const modelURL = URL + "model.json";
+      const metadataURL = URL + "metadata.json";
+
+      // Hide the button after clicking
+      document.querySelector('.webcam-btn').style.display = 'none';
       
-      // Video
-      let video;
-      let flippedVideo;
-      // To store the classification
-      let label = "";
-  
-      // Load the model first
-      function preload() {
-        classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+      // Show loading message
+      labelContainer = document.getElementById("label-container");
+      labelContainer.innerHTML = "<div>Loading model...</div>";
+
+      // Load the model and metadata
+      model = await tmImage.load(modelURL, metadataURL);
+      maxPredictions = model.getTotalClasses();
+
+      // Setup webcam
+      const flip = true; // whether to flip the webcam
+      webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
+      await webcam.setup(); // request access to the webcam
+      await webcam.play();
+      
+      // Append webcam to container
+      document.getElementById("webcam-container").appendChild(webcam.canvas);
+      
+      // Update loading message
+      labelContainer.innerHTML = "";
+      for (let i = 0; i < maxPredictions; i++) {
+        labelContainer.appendChild(document.createElement("div"));
       }
-  
-      function setup() {
-        // Create canvas and place it in the container
-        let canvas = createCanvas(320, 260);
-        canvas.parent('canvas-container');
-        
-        // Create the video
-        video = createCapture(VIDEO);
-        video.size(320, 240);
-        video.hide();
-  
-        flippedVideo = ml5.flipImage(video);
-        // Start classifying
-        classifyVideo();
+      
+      // Start prediction loop
+      window.requestAnimationFrame(loop);
+    }
+
+    async function loop() {
+      webcam.update(); // update the webcam frame
+      await predict();
+      window.requestAnimationFrame(loop);
+    }
+
+    // Run the webcam image through the image model
+    async function predict() {
+      // Predict can take in an image, video or canvas html element
+      const prediction = await model.predict(webcam.canvas);
+      for (let i = 0; i < maxPredictions; i++) {
+        const classPrediction =
+          prediction[i].className + ": " + 
+          (prediction[i].probability * 100).toFixed(2) + "%";
+        labelContainer.childNodes[i].innerHTML = classPrediction;
       }
-  
-      function draw() {
-        background(0);
-        // Draw the video
-        image(flippedVideo, 0, 0);
-  
-        // Draw the label
-        fill(255);
-        textSize(16);
-        textAlign(CENTER);
-        text(label, width / 2, height - 4);
-        
-        // Update the prediction text
-        document.getElementById('prediction-text').innerText = label;
-      }
-  
-      // Get a prediction for the current video frame
-      function classifyVideo() {
-        flippedVideo = ml5.flipImage(video)
-        classifier.classify(flippedVideo, gotResult);
-        flippedVideo.remove();
-      }
-  
-      // When we get a result
-      function gotResult(error, results) {
-        // If there is an error
-        if (error) {
-          console.error(error);
-          return;
-        }
-        // The results are in an array ordered by confidence.
-        // console.log(results[0]);
-        label = results[0].label;
-        // Classifiy again!
-        classifyVideo();
-      }
-    </script>
-  </body>
-  </html>
+    }
+  </script>
+
+</body>
+</html>
