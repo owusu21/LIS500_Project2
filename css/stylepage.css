@@ -457,6 +457,14 @@ img {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Machine Page
+-----------------------------------*/
+.img-examples {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
 /* Teachable Machine Model Container
 -----------------------------------*/
 #model-container {
