@@ -657,7 +657,6 @@ p {
 .img-examples {
   display: inline;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .img-examples img {
