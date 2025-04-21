@@ -568,64 +568,8 @@ img {
   border: none;
 }
 
-/* Tab Navigation Styling */
-.model-tabs {
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-  max-width: 650px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.tab-btn {
-  flex: 1;
-  padding: 15px 20px;
-  background: #F9EAE3;
-  color: #4B3B47;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-bottom: 3px solid transparent;
-}
-
-.tab-btn:hover {
-  background: #F3DFD5;
-}
-
-.tab-btn.active {
-  background: #F3DFD5;
-  border-bottom: 3px solid #C97D63;
-}
-
-/* Tab Content Styling */
-.tab-content {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.tab-content.active {
-  display: block;
-  opacity: 1;
-}
-
-/* Ensuring both tabs have consistent space */
-#watch-tab, #try-tab {
-  margin-bottom: 40px;
-}
-
-/* Center everything */
-.our-machine {
-  text-align: center;
-}
-
 /* Our machine process  style */
+
 
 /* Body Styling */
 body.machine-project {

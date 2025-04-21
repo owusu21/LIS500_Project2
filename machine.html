@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset = "UTF-8">
   <title>Process of Our Machine</title>
 
   <!-- Font: Monsterrat -->
@@ -18,75 +18,47 @@
 </head>
 
 <!-- Navigation -->
-<header>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="resources.html">Implicit Bias Resources</a>
-    <a href="tech-hero.html">Our Tech Heroes</a>
-    <a href="process.html">Process of Our Machine</a>
-  </div>
-</header>
-  
-<body class="our-machine">
-  <h2>Our Machine Project</h2>
-  
-  <div class="model-tabs">
-    <button class="tab-btn active" onclick="showTab('watch')">Watch Our Model</button>
-    <button class="tab-btn" onclick="showTab('try')">Try Our Model</button>
-  </div>
-
-  <div id="watch-tab" class="tab-content active">
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/JHGKQpShZkg?si=OY35niU1PU9DnXuY" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen></iframe>
+  <header>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="resources.html">Implicit Bias Resources</a>
+      <a href="tech-hero.html">Our Tech Heroes</a>
+      <a href="process.html">Process of Our Machine</a>
     </div>
+    </header>
+  
+  <body class=our-machine>
+    <h2>Our Machine Project</h2>
+    
+  <h3>Watch Our Model</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/JHGKQpShZkg?si=OY35niU1PU9DnXuY" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
   </div>
   
-  <div id="try-tab" class="tab-content">
-    <div id="model-container">
-      <p>Hold up an image of a horse, bird, or fish to your webcam:</p>
-      <button type="button" class="webcam-btn" onclick="init()">Start Webcam</button>
-      <div id="webcam-container"></div>
-      <div id="label-container"></div>
-    </div>
-  </div>
+<h3>Try Our Model</h3>
+<div id="model-container">
+  <p>Hold up an image of a horse, bird, or fish to your webcam:</p>
+  <button type="button" class="webcam-btn" onclick="init()">Start Webcam</button>
+  <div id="webcam-container"></div>
+  <div id="label-container"></div>
+</div>
 
-  <h3>Check Out The Code</h3>
-  <div class="links">
-    <a href="https://github.com/owusu21/LIS500_Project2" target="_blank">View on GitHub</a>
-  </div>
+<h3>Check Out The Code</h3>
+<div class="links">
+  <a href="https://github.com/owusu21/LIS500_Project2" target="_blank">View on GitHub</a>
+</div>
 
   <script>
     // Your Teachable Machine model URL
     const URL = "https://teachablemachine.withgoogle.com/models/jRAbVev-M/";
     
     let model, webcam, labelContainer, maxPredictions;
-
-    // Tab switching functionality
-    function showTab(tabName) {
-      // Hide all tabs
-      const tabs = document.querySelectorAll('.tab-content');
-      tabs.forEach(tab => {
-        tab.classList.remove('active');
-      });
-      
-      // Remove active class from all buttons
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(button => {
-        button.classList.remove('active');
-      });
-      
-      // Show the selected tab
-      document.getElementById(tabName + '-tab').classList.add('active');
-      
-      // Set the clicked button as active
-      event.currentTarget.classList.add('active');
-    }
 
     // Load the image model and setup the webcam
     async function init() {
@@ -141,5 +113,6 @@
       }
     }
   </script>
+
 </body>
 </html>
