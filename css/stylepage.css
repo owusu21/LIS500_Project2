@@ -567,3 +567,38 @@ img {
   height: 100%;
   border: none;
 }
+
+/* Our machine page style */
+
+.machine-page {
+  font-family: "Montserrat", sans-serif;
+}
+
+.machine-page h1,
+.machine-page h2,
+.machine-page h3 {
+  color: #4B3B47;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.machine-page p {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.machine-page .image-row {
+  display: flex; /* Makes images in a line */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between images */
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.machine-page .image-row img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
