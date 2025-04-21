@@ -568,6 +568,59 @@ img {
   border: none;
 }
 
+/* Model Tabs Styling */
+.model-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 12px 25px;
+  background: #F9EAE3;
+  color: #4B3B47;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(75, 59, 71, 0.2);
+  position: relative;
+  bottom: -1px;
+}
+
+.tab-btn:hover {
+  background: #E8DAD3;
+}
+
+.tab-btn.active {
+  background: #F9EAE3;
+  border-bottom: 3px solid #C97D63;
+  box-shadow: 0 4px 8px rgba(75, 59, 71, 0.3);
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active-tab {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Adjust model container for tabs */
+#model-container {
+  margin-top: 0;
+  border-radius: 0 12px 12px 12px;
+}
+
 /* Our machine process  style */
 
 
@@ -643,7 +696,7 @@ p {
 
 .our-machine .links a:hover {
   background-color: #e67300;
-  padding-bottom: 80px:
+  padding-bottom: 80px;
 }
 
 

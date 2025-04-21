@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset = "UTF-8">
-  <title>Process of Our Machine</title>
+  <meta charset="UTF-8">
+  <title>Our Machine Project</title>
 
   <!-- Font: Monsterrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,92 +18,109 @@
 </head>
 
 <!-- Navigation -->
-  <header>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="resources.html">Implicit Bias Resources</a>
-      <a href="tech-hero.html">Our Tech Heroes</a>
-      <a href="process.html">Process of Our Machine</a>
-    </div>
-    </header>
+<header>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="resources.html">Implicit Bias Resources</a>
+    <a href="tech-hero.html">Our Tech Heroes</a>
+    <a href="process.html">Process of Our Machine</a>
+  </div>
+</header>
   
-  <body class=our-machine>
-    <h2>Our Machine Project</h2>
-    
-  <h3>Watch Our Model</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/JHGKQpShZkg?si=OY35niU1PU9DnXuY" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
+<body class="our-machine">
+  <h2>Our Machine Project</h2>
+  
+  <!-- Tab Navigation -->
+  <div class="model-tabs">
+    <button class="tab-btn active" onclick="openTab('watch-tab')">Watch Our Model</button>
+    <button class="tab-btn" onclick="openTab('try-tab')">Try Our Model</button>
   </div>
   
-<h3>Try Our Model</h3>
-<div id="model-container">
-  <p>Hold up an image of a horse, bird, or fish to your webcam:</p>
-  <button type="button" class="webcam-btn" onclick="init()">Start Webcam</button>
-  <div id="webcam-container"></div>
-  <div id="label-container"></div>
-</div>
-
-<h3>Check Out The Code</h3>
-<div class="links">
-  <a href="https://github.com/owusu21/LIS500_Project2" target="_blank">View on GitHub</a>
-</div>
+  <!-- Watch Tab Content -->
+  <div id="watch-tab" class="tab-content active-tab">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/JHGKQpShZkg?si=OY35niU1PU9DnXuY" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!-- Try Tab Content -->
+  <div id="try-tab" class="tab-content">
+    <div id="model-container">
+      <p class="webcam-instructions">Hold up an image of a horse, bird, or fish to your webcam:</p>
+      <button type="button" class="webcam-btn" onclick="init()">Start Webcam</button>
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </div>
+  </div>
+  
+  <h3>Check Out The Code</h3>
+  <div class="links">
+    <a href="https://github.com/owusu21/LIS500_Project2" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+  </div>
 
   <script>
-    // Your Teachable Machine model URL
+    // Tab functionality
+    function openTab(tabId) {
+      // Hide all tab contents
+      const tabContents = document.getElementsByClassName('tab-content');
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active-tab');
+      }
+      
+      // Remove active class from all buttons
+      const tabButtons = document.getElementsByClassName('tab-btn');
+      for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+      }
+      
+      // Show the selected tab and mark button as active
+      document.getElementById(tabId).classList.add('active-tab');
+      event.currentTarget.classList.add('active');
+    }
+
+    // Teachable Machine Model Code
     const URL = "https://teachablemachine.withgoogle.com/models/jRAbVev-M/";
-    
     let model, webcam, labelContainer, maxPredictions;
 
-    // Load the image model and setup the webcam
     async function init() {
       const modelURL = URL + "model.json";
       const metadataURL = URL + "metadata.json";
 
-      // Hide the button after clicking
       document.querySelector('.webcam-btn').style.display = 'none';
-      
-      // Show loading message
       labelContainer = document.getElementById("label-container");
       labelContainer.innerHTML = "<div>Loading model...</div>";
 
-      // Load the model and metadata
       model = await tmImage.load(modelURL, metadataURL);
       maxPredictions = model.getTotalClasses();
 
-      // Setup webcam
-      const flip = true; // whether to flip the webcam
-      webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
-      await webcam.setup(); // request access to the webcam
+      const flip = true;
+      webcam = new tmImage.Webcam(400, 400, flip);
+      await webcam.setup();
       await webcam.play();
       
-      // Append webcam to container
       document.getElementById("webcam-container").appendChild(webcam.canvas);
-      
-      // Update loading message
       labelContainer.innerHTML = "";
+      
       for (let i = 0; i < maxPredictions; i++) {
         labelContainer.appendChild(document.createElement("div"));
       }
       
-      // Start prediction loop
       window.requestAnimationFrame(loop);
     }
 
     async function loop() {
-      webcam.update(); // update the webcam frame
+      webcam.update();
       await predict();
       window.requestAnimationFrame(loop);
     }
 
-    // Run the webcam image through the image model
     async function predict() {
-      // Predict can take in an image, video or canvas html element
       const prediction = await model.predict(webcam.canvas);
       for (let i = 0; i < maxPredictions; i++) {
         const classPrediction =
@@ -113,6 +130,5 @@
       }
     }
   </script>
-
 </body>
 </html>
