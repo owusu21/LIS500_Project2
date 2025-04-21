@@ -702,3 +702,8 @@ p {
 .our-machine {
   padding-bottom: 80px;
 }
+
+.all-image-link a {
+  color: #4B3B47 ; 
+  text-align: center;
+}
