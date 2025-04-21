@@ -469,7 +469,7 @@ img {
 #model-container {
   margin: 40px auto;
   padding: 25px;
-  background: #F9EAE3;
+  background: #F5D9C8;
   border-radius: 12px;
   max-width: 650px;
   box-shadow: 0 4px 15px rgba(75, 59, 71, 0.2);
@@ -553,8 +553,9 @@ img {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 650px; /* Match with other containers for consistency */
+  width: 100%;
+  margin: 20px auto; /* This centers the container horizontally */
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(75, 59, 71, 0.2);
 }
@@ -581,7 +582,7 @@ img {
 .tab-btn {
   flex: 1;
   padding: 15px 20px;
-  background: #F9EAE3;
+  background: #F5D9C8;
   color: #4B3B47;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -593,11 +594,11 @@ img {
 }
 
 .tab-btn:hover {
-  background: #F3DFD5;
+  background: #F5D9C8;
 }
 
 .tab-btn.active {
-  background: #F3DFD5;
+  background: #F5D9C8;
   border-bottom: 3px solid #C97D63;
 }
 
