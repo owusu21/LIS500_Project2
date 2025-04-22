@@ -655,7 +655,7 @@ p {
 
 /* Center and Style Image Row */
 .img-examples {
-  display: inline;
+  display: flex;
   justify-content: center;
 }
 
